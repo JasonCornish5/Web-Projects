@@ -1,0 +1,95 @@
+body {
+  width: 100%;
+  margin: auto;
+  height: 800px;
+}
+
+#wrapper {
+  width: 850px;
+  margin: auto;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+#header-Cont {
+  width: 100%;
+  height: 450px;
+  background-image: url("space.png");
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-Cont h1 {
+  font-size: 100px;
+  margin: 0px;
+  font-family: Heebo;
+  color: white;
+  font-weight: bolder;
+}
+
+#body-Cont {
+  height: 324px;
+  width: 100%;
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.body-Conts {
+  width: 270px;
+}
+
+#social-Cont {
+  margin-right: 20px;
+}
+
+#contact-Cont {
+  margin-left: 20px;
+}
+
+#social-Header p {
+  font-weight: bolder;
+}
+
+#office-Header p {
+  font-weight: bolder;
+}
+
+#contact-Header p {
+  font-weight: bolder;
+  font-family: Heebo;
+}
+
+#contact-Body p {
+  font-family: Heebo;
+  margin-bottom: 0px;
+}
+
+#message {
+  height: 70px;
+  margin: 0px;
+}
+
+.body-Conts {
+  font-family: Heebo;
+
+}
+
+#button {
+  font-family: arial;
+  background-color: #4d4d4d;
+  color: white;
+  font-size: 20px;
+  width: 80px;
+  text-align: center;
+  font-weight: bold;
+  height: 30px;
+  padding-top: 5px;
+  margin-top: 10px;
+
+}
