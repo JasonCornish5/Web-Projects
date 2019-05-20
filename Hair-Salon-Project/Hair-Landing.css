@@ -2,18 +2,27 @@ body {
   width: 100%;
   margin: auto;
   padding-top: 0px;
-  height: 1000px;
+  height: 1900px;
+  background-color: navy;
 }
 
 p {
   margin: 0;
 }
 
+#footer-Buzz {
+  display: none;
+}
+
+#header-Mobile {
+  display: none;
+}
+
 #hero-Cont {
   margin-top: 0px;
   width: 100%;
   margin: auto;
-  height: 700px;
+  height: 1000px;
   overflow: hidden;
   display: flex;
   background-color: #7DD1C9;
@@ -22,27 +31,42 @@ p {
   flex-direction: column;
 }
 
+#hamburger-Cont div {
+  height: 4px;
+  width: 35px;
+  background-color: #fffdd0;
+  margin-bottom: 8px;
+}
+
+#buzz-Header {
+  display: none;
+}
+
 #header-Cont {
   width: 100%;
-  height: 100px;
+  height: 70px;
   margin: auto;
-  margin-bottom: 30px;
-  background-color: #1E1E1E;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  background-color: #7DD1C9;
 }
 
 #header-Links {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 55px;
+  height: 70px;
   padding-top: 5px;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
 }
 
 #header-Links a {
   color: #fffdd0;
-  font-size: 40px;
-  font-family: Shrikhand;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: proxima-Nova;
   text-decoration: none;
 }
 
@@ -56,6 +80,7 @@ p {
   font-family: Shrikhand;
   text-decoration: none;
   color: #fffdd0;
+  height: auto;
   text-shadow: 1px 1px #1e1e1e,
                 2px 2px #1e1e1e,
                 3px 3px #1e1e1e,
@@ -64,66 +89,170 @@ p {
                 6px 6px #1e1e1e;
   font-size: 90px;
   letter-spacing: 5px;
+  margin-top: 0px;
+  text-align: center;
 }
 
 #header-Buzz {
   grid-area: buzz;
+  text-align: center;
 }
 
 #greeting-Cont {
   width: 100%;
-  height: 700px;
+  height: 750px;
   display: grid;
   font-family: Merriweather;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
   background-color: #7DD1C9;
 
   grid-template-areas:
-  ". . . . buzz buzz . . . ."
-  " hero hero hero hero hero hero hero hero hero hero"
-  ". body body body body . link link link ."
-  ". body body body body . link link link ."
-  ". body body body body . link link link ."
+  "buzz buzz buzz buzz buzz buzz buzz buzz buzz buzz"
+  ". body body body body body body body body ."
+  ". body body body body body body body body ."
+  ". body body body body body body body body ."
+  ". body body body body body body body body ."
+  ". body body body body body body body body ."
+  ". body body body body body body body body ."
+}
+
+#hair-Gallery-Cont {
+  margin: auto;
+  height: 600px;
+}
+
+#hair-Gallery {
+  width: 100%;
+  height: 100%;
+
+}
+
+#hair-ButtonLeft {
+  display: flex;
+
+}
+
+#hairIMG {
+  width: 100%;
+  height: 100%;
+}
+
+.hair-Images img {
+  height: 100%;
+  width: 100%;
 }
 
 #hero-Message {
-  grid-area: hero;
+  grid-area: lead;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 
 #hero-Message p {
-  font-family: Merriweather;
-  color: #302E30;
-  font-size: 50px;
+  font-family: Shrikhand;
+  font-size: 40px;
+  opacity: 1.0;
+  color: #fffdd0;
+  text-shadow: 1px 1px navy,
+                2px 2px navy,
+                3px 3px navy,
+                4px 4px navy;
+                letter-spacing: 2px;
+}
+
+#greeting-Body::-webkit-scrollbar-track
+{
+    background-color: rgb(100, 167, 160);
+}
+
+#greeting-Body::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #fffdd0;
+}
+
+#greeting-Body::-webkit-scrollbar-thumb
+{
+    background-color: navy;
 }
 
 #greeting-Body {
   grid-area: body;
-  color: #302E30;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 100px);
+  padding-top: 20px;
+  background: rgba(100, 167, 160, 0.8);
+
+  grid-template-areas:
+  "lead lead lead lead lead lead lead lead lead"
+  ". . herobody herobody herobody herobody herobody . ."
+  ". . herobody herobody herobody herobody herobody . ."
+  "lead2 lead2 lead2 lead2 lead2 lead2 lead2 lead2 lead2"
+  ". . herobody2 herobody2 herobody2 herobody2 herobody2 . ."
+  ". . herobody2 herobody2 herobody2 herobody2 herobody2 . ."
+  "lead3 lead3 lead3 lead3 lead3 lead3 lead3 lead3 lead3"
+  ". . herobody3 herobody3 herobody3 herobody3 herobody3 . ."
+  ". . herobody3 herobody3 herobody3 herobody3 herobody3 . .";
+  overflow-y: scroll;
+  font-size: 35px;
+  border-radius: 1%/2%;
+}
+
+#hero-Body {
+  grid-area: herobody;
+  font-family: proxima-nova;
   font-size: 30px;
-  padding-top: 80px;
+  color: navy;
+  font-weight: normal;
+  text-align: left;
 }
 
-#greeting-Links {
-  grid-area: link;
-  background-color: #4D827E;
-  border-radius: 5%;
-  opacity: 0.8;
-  height: 260px;
+#hero-Body3 {
+  grid-area: herobody3;
+  font-family: proxima-nova;
+  font-size: 30px;
+  font-weight: normal;
+  color: navy;
+  text-align: left;
 }
 
-#greeting-Link {
+#hero-Message3 {
+  grid-area: lead3;
   font-family: Shrikhand;
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  font-size: 40px;
+  opacity: 1.0;
   text-align: center;
-  height: 100%;
-  color: black;
+  color: #fffdd0;
+  text-shadow: 1px 1px navy,
+                2px 2px navy,
+                3px 3px navy,
+                4px 4px navy;
+                letter-spacing: 2px;
+}
 
+#hero-Message2 {
+  grid-area: lead2;
+  font-family: Shrikhand;
+  font-size: 40px;
+  opacity: 1.0;
+  text-align: center;
+  color: #fffdd0;
+  text-shadow: 1px 1px navy,
+                2px 2px navy,
+                3px 3px navy,
+                4px 4px navy;
+                letter-spacing: 2px;
+}
+
+#hero-Body2 {
+  grid-area: herobody2;
+  font-family: proxima-nova;
+  font-size: 30px;
+  color: navy;
+  font-weight: normal;
+  text-align: left;
 }
 
 #hair-Type {
@@ -193,7 +322,7 @@ p {
 .main-Statement-Cont {
   width: 100%;
   text-align: center;
-  background-color: #1e1e1e;
+  background-color: navy;
   padding-top: 100px;
   color: #fffdd0;
   font-family: merriweather;
@@ -203,11 +332,11 @@ p {
 
 #main-Top-Cont {
   width: 100%;
-  height: 590px;
+  height: 730px;
   display: grid;
   grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  background-color: #1e1e1e;
+  grid-template-rows: repeat(11, 1fr);
+  background-color: navy;
 
   grid-template-areas:
 
@@ -220,22 +349,17 @@ p {
   ". leftTop leftTop leftTop leftTop . rightTop rightTop rightTop rightTop ."
   ". leftTop leftTop leftTop leftTop . rightTop rightTop rightTop rightTop ."
   ". leftTop leftTop leftTop leftTop . rightTop rightTop rightTop rightTop ."
-  ". leftTop leftTop leftTop leftTop . rightTop rightTop rightTop rightTop .";
+  ". . . . . . . . . . ."
+  ". . . . . . . . . . .";
   padding-top: 50px;
 }
 
 #leftTop-Cont {
   grid-area: leftTop;
-  background-color: white;
-  border-radius: 5%/5%;
-  opacity: 0.8;
 }
 
 #rightTop-Cont {
   grid-area: rightTop;
-  background-color: white;
-  border-radius: 5%/5%;
-  opacity: 0.8;
   padding-top: 30px;
 }
 
@@ -246,40 +370,45 @@ p {
 }
 
 #rightTop-Text p {
-  color: #1e1e1e;
+  color: #;
   font-family: Merriweather;
 }
 
 #leftTop-Header p {
-  font-size: 35px;
-  color: #1e1e1e;
+  font-size: 40px;
+  color: #fffdd0;
   text-align: center;
   margin-bottom: 5px;
+  font-family: proxima-nova;
+  font-weight: 600;
+
+}
+
+#rightTop-Text {
+  padding-top: 70px;
 }
 
 #leftTop-Header {
   margin-top: 25px;
   margin-left: 60px;
   margin-right: 60px;
-  font-family: Merriweather;
   text-align: center;
   margin-bottom: 25px;
 }
 
 #rightTop-Body {
-  background-color: #1e1e1e;
   color: #fffdd0;
   margin: auto;
   width: 90%;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   border-radius: 1%/5%;
 }
 
 #rightTop-Body p {
   text-align: center;
-  font-family: Merriweather;
-  color: white;
+  font-family: proxima-nova;
+  color: #fffdd0;
   font-size: 25px;
   margin-bottom: 5px;
   margin-top: 25px;
@@ -287,8 +416,8 @@ p {
 
 #rightTop-Header p {
   text-align: center;
-  font-family: Merriweather;
-  color: white;
+  font-family: proxima-nova;
+  color: #fffdd0;
   font-size: 25px;
 
 }
@@ -308,7 +437,6 @@ p {
 }
 
 #rightTop-Header {
-  background-color: #1e1e1e;
   color: #fffdd0;
   margin: auto;
   width: 90%;
@@ -327,4 +455,257 @@ p {
   margin: auto;
   background-position: center;
   margin-bottom: 5px;
+}
+
+#main-Mobile {
+  display: none;
+}
+
+.main-Statement-Cont-Mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+  #hero-Cont {
+    height: 1000px;
+  }
+
+  #header-Cont {
+    display: none;
+  }
+  #header-Links {
+    display: none;
+  }
+
+  #header-Buzz {
+    display: none;
+    padding-top: 10px;
+  }
+
+  #header-Mobile {
+    display: block;
+    height: 100px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  #hamburger-Mobile {
+    padding-top: 35px;
+    margin-left: 12%;
+  }
+
+  #hamburger-Mobile:hover {
+    cursor: pointer;
+  }
+
+  #hamburger-Mobile div {
+    height: 10px;
+    width: 80px;
+    background-color: #fffdd0;
+    margin-bottom: 17px;
+  }
+
+  #buzz-Mobile a {
+    font-family: Shrikhand;
+    text-decoration: none;
+    color: #fffdd0;
+    text-shadow: 1px 1px #1e1e1e,
+                  2px 2px #1e1e1e,
+                  3px 3px #1e1e1e,
+                  4px 4px #1e1e1e,
+                  5px 5px #1e1e1e,
+                  6px 6px #1e1e1e;
+    font-size: 90px;
+  }
+
+  #home, #lorem, #lorem2 {
+    display: none;
+  }
+
+  #greeting-Cont {
+    height: 800px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 150px);
+    padding-top: 50px;
+
+    grid-template-areas:
+    ". body body body body body body body body ."
+    ". body body body body body body body body ."
+    ". body body body body body body body body ."
+    ". body body body body body body body body ."
+    ". body body body body body body body body ."
+    ". body body body body body body body body ."
+    ". body body body body body body body body ."
+    ". body body body body body body body body .";
+  }
+
+  #greeting-Body {
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(18, 75px);
+    padding-top: 20px;
+    width: 100%;
+    height: 650px;
+    background: rgba(100, 167, 160, 0.8);
+
+    grid-template-areas:
+    "lead lead lead lead lead lead lead lead lead"
+    ". . herobody herobody herobody herobody herobody herobody ."
+    ". . herobody herobody herobody herobody herobody herobody ."
+    ". . herobody herobody herobody herobody herobody herobody ."
+    "lead2 lead2 lead2 lead2 lead2 lead2 lead2 lead2 lead2"
+    ". . herobody2 herobody2 herobody2 herobody2 herobody2 herobody2 ."
+    ". . herobody2 herobody2 herobody2 herobody2 herobody2 herobody2 ."
+    ". . herobody2 herobody2 herobody2 herobody2 herobody2 herobody2 ."
+    "lead3 lead3 lead3 lead3 lead3 lead3 lead3 lead3 lead3"
+    ". . herobody3 herobody3 herobody3 herobody3 herobody3 herobody3 ."
+    ". . herobody3 herobody3 herobody3 herobody3 herobody3 herobody3 ."
+    ". . herobody3 herobody3 herobody3 herobody3 herobody3 herobody3 .";
+    overflow-y: scroll;
+    font-size: 35px;
+    border-radius: 1%/2%;
+
+  }
+
+  #hero-Body {
+    font-size: 25px;
+  }
+
+  #hero-Body2 {
+    font-size: 25px;
+  }
+
+  #hero-Body3 {
+    font-size: 25px;
+  }
+
+  #hero-Message3 span {
+    display: none;
+  }
+
+  #main-Top-Cont {
+    display: none;
+  }
+
+  #main-Mobile {
+    width: 100%;
+    height: 830px;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background-color: navy;
+    grid-template-areas:
+
+    "mhead mhead mhead mhead mhead mhead mhead mhead mhead mhead mhead mhead mhead mhead mhead mhead mhead mhead mhead mhead"
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob . . qmob qmob qmob qmob qmob qmob qmob qmob ."
+    ". imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob . . qmob qmob qmob qmob qmob qmob qmob qmob ."
+    ". imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob . . qmob qmob qmob qmob qmob qmob qmob qmob ."
+    ". imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob . . qmob qmob qmob qmob qmob qmob qmob qmob ."
+    ". imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob . . qmob qmob qmob qmob qmob qmob qmob qmob ."
+    ". imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob . . qmob qmob qmob qmob qmob qmob qmob qmob ."
+    ". imgmob imgmob imgmob imgmob imgmob imgmob imgmob imgmob . . qmob qmob qmob qmob qmob qmob qmob qmob ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . pmob pmob pmob pmob pmob pmob pmob pmob pmob pmob pmob pmob pmob pmob . . .";
+    padding-top: 50px;
+  }
+
+  #main-Header-Mobile {
+    grid-area: mhead;
+  }
+
+  .main-Statement-Cont {
+    display: none;
+  }
+
+  .main-Statement-Cont-Mobile {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: solid 2px #fffdd0;
+    text-align: center;
+    background-color: navy;
+    padding-top: 100px;
+    color: #fffdd0;
+    font-family: merriweather;
+    font-size: 50px;
+
+  }
+
+  .main-Statement-Mobile p {
+    font-family: proxima-nova;
+    font-weight: 900;
+    display: block;
+  }
+
+  .main-Statement-Mobile {
+    display: block;
+  }
+
+  #main-Header-Mobile p {
+    color: #fffdd0;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    font-family: proxima-nova;
+  }
+
+  #main-Img-Mobile {
+    grid-area: imgmob;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/girl.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #main-Quote-Mobile {
+    grid-area: qmob;
+    color: #fffdd0;
+    font-size: 30px;
+    font-family: proxima-nova;
+    display: flex;
+    align-items: center;
+  }
+
+  #main-P-Mobile {
+    grid-area: pmob;
+    text-align: center;
+    font-size: 30px;
+    color: #fffdd0;
+    font-family: proxima-nova;
+    margin: auto;
+    border-top: solid 2px #fffdd0;
+    padding-top: 50px;
+  }
+
+  #footer-Buzz {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100px;
+  }
+
+  #footer-Buzz p {
+    font-family: Shrikhand;
+    text-decoration: none;
+    color: #fffdd0;
+    height: auto;
+    text-shadow: 1px 1px black,
+                  2px 2px black,
+                  3px 3px black,
+                  4px 4px black,
+                  5px 5px black,
+                  6px 6px black;
+    font-size: 90px;
+    letter-spacing: 5px;
+    text-align: center;
+    background-color: navy;
+  }
+
+
 }
