@@ -1,0 +1,106 @@
+body {
+  width: 100%;
+  height: 1000px;
+  background-color: navy;
+  margin: 0;
+}
+
+.main-Cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.main {
+    width: 95%;
+    height: 95%;
+    background-color: white;
+}
+
+#header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+#hamburger-Cont {
+  width:
+}
+
+.hamburger {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+.patty {
+  border-bottom: 2px solid black;
+  margin-bottom: 7px;
+  width: 50px;
+  height: 5px;
+
+}
+
+.name a {
+  text-decoration: none;
+  color: black;
+  font-family: proxima-nova;
+  font-size: 50px;
+}
+
+.body {
+  width: 50%;
+  padding-left: 15%;
+}
+
+.body-Header p {
+  font-size: 60px;
+  font-family: proxima-nova;
+  font-weight: bold;
+}
+
+.body-Body  p {
+  font-size: 25px;
+  font-family: proxima-nova;
+}
+
+.body-Body2 p {
+  font-size: 25px;
+  font-family: proxima-nova;
+}
+
+.social-Links {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+.social-link {
+  margin-right: 50px
+}
+
+.social-link p, a {
+  font-family: proxima-nova;
+  text-decoration: none;
+  color: black;
+}
+
+.social-link p {
+  font-size: 15px;
+}
+
+.social-link a {
+  font-size: 25px;
+}
+
+input, label {
+  display: block;
+}

@@ -1,0 +1,61 @@
+body {
+  width: 100%;
+  margin-top: 50px;
+}
+
+#header {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.fsi-Logo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.fsi-Logo img {
+  height: 110px;
+  width: 110px;
+  margin-right: 15px;
+}
+
+#login a {
+  margin-right: 0;
+}
+
+#fsi-Name {
+  margin-bottom: 10px;
+}
+
+#fsi-Name a {
+text-align: center;
+font-size: 80px;
+font-weight: 500;
+}
+
+.fsi-Logo a {
+  font-size: 50px;
+  text-decoration: none;
+  color: black;
+  font-family: proxima-nova;
+}
+
+.header-Links {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.header-Link a {
+  font-family: proxima-nova;
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  margin-right: 50px;
+}
