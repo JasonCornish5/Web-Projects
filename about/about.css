@@ -1,58 +1,148 @@
 body {
   width: 100%;
-  height: 1000px;
-  background-color: navy;
+  height: 1500px;
+  background-color: #fffdd0;
   margin: 0;
 }
 
-.main-Cont {
+.sidebar-Cont {
+  position: fixed;
+  height: 96%;
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  right: 0;
+  z-index: 10;
+  border-left: solid 1px #fffdd0;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+.sidebar {
   width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.sidebar div {
+  width: 33%;
+}
+
+.side-Home {
+  height: 20%;
+}
+
+.side-Home a {
+  color: white;
+  font-family: arrow;
+  font-size: 600%;
+  writing-mode: vertical-lr;
+}
+
+.side-Home a:hover {
+  padding-bottom: 15px;
+  border-bottom: 5px solid #fffdd0;
+}
+
+.side-Portfolio a {
+  color: white;
+  font-family: arrow;
+  font-size: 600%;
+  writing-mode: vertical-lr;
+}
+
+.side-Portfolio a:hover {
+  padding-bottom: 15px;
+  border-bottom: 5px solid #fffdd0;
+}
+
+.side-About a {
+  margin-top: 10px;
+  color: white;
+  font-family: arrow;
+  font-size: 600%;
+  writing-mode: vertical-lr;
+}
+
+.side-About a:hover {
+  padding-bottom: 15px;
+  border-bottom: 5px solid #fffdd0;
+}
+
+@font-face {
+  font-family: revue;
+  src: url('../fonts/revue.ttf');
+  src: url('../fonts/unicode.revueb.ttf')
+}
+
+@font-face {
+  font-family: arrow;
+  src: url('../fonts/tfarrowmedium.ttf');
+  src: url('../fonts/tfarrowbold.ttf');
+}
+
+.main-Cont {
+  position: absolute;
+  width: 100%;
+  height: 1500px;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
 }
 
 .main {
     width: 95%;
-    height: 95%;
-    background-color: white;
+    height: 100%;
+    background-color: #1d2120;
 }
 
 #header {
-  width: 100%;
+  width: 60%;
   height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding-left: 20px;
+  padding-left: 7.5%;
   padding-top: 10px;
 }
 
-#hamburger-Cont {
-  width:
+.header-Links {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-Links a {
+  font-family: revue;
+  font-size: 25px;
+  color: white;
 }
 
 .hamburger {
-  height: 100px;
   display: flex;
   flex-direction: column;
-  width: 100px;
+  margin-top: 20px;
+  margin-right: 60px;
+}
+
+.hamburger:hover {
+  cursor: pointer;
 }
 
 .patty {
-  border-bottom: 2px solid black;
-  margin-bottom: 7px;
-  width: 50px;
-  height: 5px;
+  background-color: white;
+  margin-bottom: 10px;
+  width: 45px;
+  height: 4px;
 
 }
 
 .name a {
   text-decoration: none;
-  color: black;
-  font-family: proxima-nova;
-  font-size: 50px;
+  color: white;
+  font-family: arrow;
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .body {
@@ -62,24 +152,29 @@ body {
 
 .body-Header p {
   font-size: 60px;
-  font-family: proxima-nova;
+  font-family: arrow;
+  color: white;
   font-weight: bold;
+  border-bottom: 1px solid #fffdd0;
 }
 
 .body-Body  p {
   font-size: 25px;
-  font-family: proxima-nova;
+  font-family: arrow;
+  color: white;
 }
 
 .body-Body2 p {
   font-size: 25px;
-  font-family: proxima-nova;
+  font-family: arrow;
+  color: white;
 }
 
 .social-Links {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 150px;
 
 }
 
@@ -88,9 +183,13 @@ body {
 }
 
 .social-link p, a {
-  font-family: proxima-nova;
+  font-family: arrow;
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+.social-link p:hover, a:hover {
+  color: #fffdd0;
 }
 
 .social-link p {
@@ -101,6 +200,97 @@ body {
   font-size: 25px;
 }
 
-input, label {
+#input1 {
+  margin-right: 10%;
+}
+
+.form-Contact {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.form-Contact input {
+  width: 45%;
+  margin: 0;
+  border: 0;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  appearance: none;
+  outline: none;
+  background-color: inherit;
+  font-family: arrow;
+  color: white;
+}
+
+
+
+input:after {
+  content: '';
   display: block;
+  border-bottom: 3px solid red;
+  width: 0;
+  position: absolute;
+  right: 0;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+input:hover::after {
+  width: 100%;
+}
+
+.form-Contact {
+  padding: 0;
+}
+
+#subject-Input {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.form-Cont2 input {
+  width: 45%;
+  border: 0;
+  border-bottom: 2px solid white;
+  font-family: arrow;
+  padding-bottom: 10px;
+  appearance: none;
+  outline: none;
+  background-color: inherit;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+#message-Input {
+  width: 100%;
+  padding-bottom: 150px;
+  margin-bottom: 20px;
+}
+
+#button-Cont button {
+  height: 50px;
+  width: 120px;
+  border: 1px solid white;
+  background-color: inherit;
+  font-size: 17px;
+  font-family: proxima-nova;
+  color: white;
+}
+
+#button-Cont button:hover {
+  cursor: pointer;
+  color: #fffdd0;
+  border: solid 1px #fffdd0;
+}
+
+#button-Cont {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }

@@ -6,8 +6,22 @@
     <link rel="stylesheet" href="https://use.typekit.net/sox0cwk.css">
     <link rel="stylesheet" href="about.css">
     <link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+    <div class="sidebar-Cont">
+      <div class="sidebar">
+        <div class="side-Home">
+          <a href="#">Home.</a>
+        </div>
+        <div class="side-Portfolio">
+          <a href="../portfolio/portfolio.html">Portfolio.</a>
+        </div>
+        <div class="side-About">
+          <a href="#">About.</a>
+        </div>
+      </div>
+    </div>
     <div class="main-Cont">
       <div class="main">
         <div id="header">
@@ -17,7 +31,7 @@
             <div class="patty"></div>
           </div>
           <div class="name">
-            <a href="#">Jason Cornish</a>
+            <a href="#">JASON CORNISH</a>
           </div>
         </div>
 
@@ -32,13 +46,22 @@
           </div>
           <div class="form-Cont">
             <form class="form-Contact" action="index.html" method="post">
-              <label for="email">Email</label>
-              <input type="text" name="email">
+              <label for="email"></label>
+              <input id="input1" type="text" name="email" placeholder="Email *">
 
-              <label for="number">Number</label>
-              <input type="text" name="number" >
+              <label for="number"></label>
+              <input type="text" name="number" placeholder="Number *">
+            </form>
+            <form class="form-Cont2" action="index.html" method="post">
+              <label for="subject"></label>
+              <input id="subject-Input" type="text" name="subject" value="" placeholder="Subject *">
+
+              <label for="message"></label>
+              <input  id="message-Input" type="text" name="message" placeholder="Message">
             </form>
           </div>
+
+          <div id="button-Cont"><button type="button" name="send">send</button></div>
       </div>
     </div>
 
