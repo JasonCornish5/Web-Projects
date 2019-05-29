@@ -1,0 +1,22 @@
+{
+  "name": "web-projects",
+  "version": "1.0.0",
+  "description": "First NPM Init",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasonCornish5/Web-Projects.git"
+  },
+  "author": "Jayson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JasonCornish5/Web-Projects/issues"
+  },
+  "homepage": "https://github.com/JasonCornish5/Web-Projects#readme",
+  "dependencies": {
+    "animate.css": "^3.7.0"
+  }
+}
