@@ -1,0 +1,527 @@
+.big-Cont {
+  width: 100%;
+  height: 1300px;
+  overflow-y: scroll;
+}
+
+#name {
+  font-family: Merriweather;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #c1a250;
+}
+
+.landing-Header a, p, i {
+  color: #626F7F;
+  font-size: 15px;
+}
+
+.landing-Header a, i {
+  color: #626F7F;
+}
+
+.icons-Cont1 a {
+  margin-right: 3%;
+  color: #626F7F;
+}
+
+.icons-Cont1 a:hover, i:hover, p:hover {
+  color: #c1a250;
+}
+
+.icons-Cont1 p {
+  margin-right: 3%;
+  font-size: 15px;
+  color: #c1a250;
+  color: #626F7F;
+  font-family: Heebo;
+}
+
+.icons-Cont1 {
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.icons-Cont1 a {
+  text-decoration: none;
+}
+
+.right-Header {
+  width: 40%;
+}
+
+.reserve {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.right-Header a {
+  margin: 0;
+  padding: 0;
+  height: 49px;
+  width: 200px;
+}
+
+.reserve:hover {
+  color: #c1a250;
+}
+
+.right-Header:hover {
+  color: #c1a250;
+}
+
+.landing-Header {
+  height: 50px;
+  padding: 0px;
+  margin-bottom: 0px;
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+}
+
+.left-Header {
+  width: 60%;
+  padding-right: 1%;
+  font-family: Montserrat;
+}
+
+#gleneagles {
+  text-decoration: none;
+  font-size: 40px;
+  font-family: Merriweather;
+  margin: 0;
+  text-align: center;
+}
+
+#gleneagles p {
+  font-size: 100%;
+  margin: 0;
+  color: #626F7F;
+}
+
+#landing-About {
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-Header p {
+  color: white;
+}
+
+.summerb {
+  width: 100%;
+  height: 100%;
+  background-image: url('summer.jpg');
+  background-size: 100.5% 100.5%;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10%;
+}
+
+.summerb-Header {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.summerb-Header h1 {
+  margin: 0;
+  font-size: 200%;
+  font-family: Arrow;
+  font-weight: normal;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.summerb-Header h2 {
+  font-size: 180%;
+  font-family: Arrow;
+  color: white;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.center-Header {
+  margin-bottom: 250px;
+}
+
+.summerb-Body {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 250%;
+}
+
+.summerb-Body p {
+  font-size: 130%;
+  color: white;
+  font-family: Montserrat;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.divider {
+  width: 100%;
+  flex-direction: column;
+  height: 700px;
+  background-color: #c1a250;
+  padding-top: 3%;
+}
+
+.years {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 58%;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.year60 {
+  width: 50%;
+  color: white;
+  font-family: Tangerine;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 50px;
+  margin-bottom: 0px;
+  margin-left: 5%;
+}
+
+.year80 {
+  width: 50%;
+  color: white;
+  font-family: Tangerine;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 50px;
+  margin-right: 14%;
+}
+
+.year60 h2, .year80 h2 {
+  margin: 0px;
+}
+
+
+.history_Sections {
+  width: 85%;
+  margin: auto;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+  'left left left left left  right right right right right'
+  'left left left left left  right right right right right'
+  'left left left left left  right right right right right'
+  'left left left left left  right right right right right'
+  'left left left left left  right right right right right';
+}
+
+#hist_1 {
+  margin-left: 20%;
+  grid-area: left;
+}
+
+#hist_1 img {
+  height: 230px;
+  width: 290px;
+  float: left;
+  margin-right: 3%;
+  margin-bottom: 3%;
+}
+
+#hist_2 {
+  margin-left: 20%;
+  grid-area: right;
+}
+
+#hist_2 img {
+  height: 230px;
+  width: 290px;
+  float: right;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+#div_header {
+  width: 100%;
+  height: 100px;
+}
+
+#div_Header p {
+  font-family: Tangerine;
+  color: white;
+  font-size: 120px;
+  height: 100px;
+  border-bottom: 2px solid white;
+  margin: auto;
+  width: 45%;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#hist_1 p {
+  font-size: 20px;
+  margin: 0;
+  color: white;
+  font-family: Montserrat;
+}
+
+#hist_2 p {
+  font-size: 20px;
+  margin: 0;
+  color: white;
+  font-family: Montserrat;
+}
+
+.divider p:hover {
+  color: white;
+}
+
+.history-Mobile {
+  display: none;
+}
+
+.mobile-Icons {
+  display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .mobile-Icons {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 7%;
+  }
+
+  .mobile-Left {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+  }
+
+  .mobile-Left a {
+    color: #626F7F;
+    font-size: 15px;
+    font-family: Montserrat;
+    text-decoration: none;
+    margin-right: 5%;
+  }
+
+  .mobile-Left p {
+    margin: 0;
+    font-size: 15px;
+    font-family: Montserrat;
+    margin-right: 5%;
+  }
+
+  #name-Mob {
+    font-size: 15px;
+    color: #c1a250;
+    font-family: Merriweather;
+    letter-spacing: 4px;
+    margin-right: 7%;
+  }
+
+  .fab {
+    display: block;
+    color: #626F7F;
+    font-size: 15px;
+  }
+
+
+  .summerb {
+    background-size: 130% 700px;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding-top: 0%;
+  }
+
+  .summerb-Header {
+    padding-top: 25%;
+    width: 70%;
+    margin-bottom: 30px;
+  }
+
+  .center-Header {
+    display: none;
+  }
+
+  .center-Header img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #landing-About {
+    height: 700px;
+  }
+
+  .summerb-Body {
+    display: none;
+  }
+
+  .summerb-Body p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .summerb-Header h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    letter-spacing: 4px;
+  }
+
+  .summerb-Header h2 {
+    font-size: 17px;
+    letter-spacing: 3px;
+  }
+
+  .divider {
+    padding-top: 10%;
+    height: 1350px;
+  }
+
+  #div_Header p {
+    font-size: 75px;
+    width: 80%;
+  }
+
+  .years {
+    display: none;
+  }
+
+  .history-Mobile {
+    display: grid;
+    height: 1250px;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(12, 100px);
+    grid-template-areas:
+    'sixty sixty sixty sixty sixty'
+    'imgone imgone imgone imgone imgone'
+    'imgone imgone imgone imgone imgone'
+    'imgone imgone imgone imgone imgone'
+    'paraone paraone paraone paraone paraone'
+    'paraone paraone paraone paraone paraone'
+    'eighty eighty eighty eighty eighty'
+    'imgtwo imgtwo imgtwo imgtwo imgtwo'
+    'imgtwo imgtwo imgtwo imgtwo imgtwo'
+    'imgtwo imgtwo imgtwo imgtwo imgtwo'
+    'paratwo paratwo paratwo paratwo paratwo'
+    'paratwo paratwo paratwo paratwo paratwo';
+
+  }
+
+  .history_Sections {
+    display: none;
+  }
+
+  .year60-Mob {
+    grid-area: sixty;
+    font-family: Tangerine;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .year60-Mob h2 {
+    margin: 0;
+  }
+
+  .year80-Mob {
+    grid-area: eighty;
+    font-family: Tangerine;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .year80-Mob h2 {
+    margin: 0;
+  }
+
+  #img1 {
+    grid-area: imgone;
+    display: flex;
+    justify-content: center;
+  }
+
+  #img1 img {
+    width: 70%;
+    height: 90%;
+  }
+
+  #img2 {
+    grid-area: imgtwo;
+    display: flex;
+    justify-content: center;
+  }
+
+  #img2 img {
+    width: 70%;
+    height: 90%;
+    margin: 0;
+  }
+
+  #p1 {
+    grid-area: paraone;
+    margin: 0;
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  #p1 p {
+    color: white;
+    font-family: Montserrat;
+    font-size: 15px;
+    margin: 0;
+  }
+
+  #p2 {
+    grid-area: paratwo;
+    margin: 0;
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  #p2 p {
+    color: white;
+    font-family: Montserrat;
+    font-size: 15px;
+    margin: 0;
+  }
+}

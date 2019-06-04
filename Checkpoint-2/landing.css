@@ -1,0 +1,355 @@
+@font-face {
+  font-family: arrow;
+  src: url('../fonts/tfarrowmedium.ttf');
+}
+
+@font-face {
+  font-family: revue;
+  src: url('../fonts/revue bt.ttf')
+}
+body {
+  width: 100%;
+  height: 900px;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-Cont {
+  width: 100%;
+  height: 500px;
+}
+
+#backg1 {
+  background-image: url('02.jpg');
+  background-size: 110% 110%;
+  background-position: center;
+  animation: fade 15s infinite;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
+  font-family: Merriweather;
+}
+
+#backg1 i {
+  font-size: 50px;
+  color: white;
+}
+
+#backg2 {
+  background-image: url('01.jpg');
+  background-size: cover;
+  animation: fade2 15s infinite;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#backg3 {
+  background-image: url('03.jpg');
+  background-size: 110% 110%;
+  background-position: center;
+  animation: fade3 15s infinite;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.scroll {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@keyframes fade {
+  0% {opacity: 1;}
+  33% {opacity: 1;}
+  43% {opacity: 0;}
+  55% {opacity: 0;}
+  60% {opacity: 0;}
+  90% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+@keyframes fade2 {
+  0% {opacity: 0;}
+  25% {opacity: 0;}
+  43% {opacity: 1;}
+  35% {opacity: 1;}
+  40% {opacity: 1;}
+  56% {opacity: 1;}
+  66% {opacity: 0;}
+  90% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+@keyframes fade3 {
+  0% {opacity: 0;}
+  25% {opacity: 0;}
+  30% {opacity: 0;}
+  35% {opacity: 0;}
+  40% {opacity: 0;}
+  56% {opacity: 0;}
+  66% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+
+
+.landing-Header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+
+}
+
+.center-Header img {
+  height: 100%;
+  width: 100%;
+  margin-top: 3%;
+}
+
+.left-Header {
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+}
+
+.center-Header {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.right-Header {
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* .hamburger {
+  height: 100%;
+  width: 20%;
+  margin-left: 4%;
+  margin-top: 3%;
+} */
+
+.patty {
+  height: 3.5%;
+  width: 45%;
+  margin-bottom: 12%;
+  background-color: white;
+}
+
+.icons-Cont {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  padding-left: 10%;
+}
+
+.icons-Cont a {
+  margin-top: 4%;
+  margin-right: 7%;
+  font-size: 25px;
+  font-family: Montserrat;
+  text-decoration: none;
+  color: white;
+}
+
+.icons-Cont a:hover {
+  color: #c1a250;
+}
+
+.icons-Cont p {
+  font-size: 25px;
+  color: white;
+  font-family: Montserrat;
+  margin-top: 4%;
+  margin-right: 7%;
+}
+
+.right-Header a {
+  font-size: 18px;
+  color: white;
+  margin-top: 2%;
+  margin-right: 4%;
+  text-decoration: none;
+  border: solid 1px #c1a250;
+  height: 60px;
+  background-color: #c1a250;
+  background: linear-gradient(-45deg, #c1a250 50%, white 50%);
+  background-size: 300% 100%;
+  background-position: right bottom;
+  transition: all .4s ease-in-out;
+}
+
+.right-Header a:hover {
+  background-position: left bottom;
+}
+
+.reserve {
+  width: 250px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: Merriweather;
+  color: white;
+  transition: all .5s ease-in-out;
+}
+
+.reserve:hover {
+  color: #c1a250;
+}
+
+.mob-Logo {
+  display: none;
+}
+
+.mob-Button {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+  i:before {
+    content: '';
+  }
+
+  .landing-Header {
+    display: none;
+  }
+
+  .icons-Cont {
+    display: none;
+  }
+
+  #backg1-Mobile {
+    background-image: url('03.jpg');
+    background-size: 320% 100%;
+    background-position: center;
+    height: 100%;
+    width: 107%;
+    position: absolute;
+  }
+
+  #backg1 {
+    background-size: 200% 100%;
+    display: none;
+  }
+
+  #backg2 {
+    display: none;
+  }
+
+  #backg3 {
+    display: none;
+  }
+
+  .mob-Header {
+    display: block;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 3%;
+    padding-top: 3%;
+    margin-top: 0;
+  }
+
+  #name-Land {
+    font-size: 20px;
+    color: #c1a250;
+    font-family: Merriweather;
+    margin-right: 10%;
+  }
+
+
+  .mob-Header a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    font-family: Montserrat;
+    margin: 0;
+    margin-right: 5%;
+  }
+
+  .mob-Header p {
+    font-size: 15px;
+    color: white;
+    font-family: Montserrat;
+    margin-right: 5%;
+    margin-top: 0%;
+  }
+
+  .mob-Logo {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+  }
+
+  .mob-Logo img {
+    width: 30%;
+    height: 150px;
+  }
+
+  .mob-Button a {
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    border: solid 1px #c1a250;
+    height: 60px;
+    background-color: #c1a250;
+    background: linear-gradient(-45deg, #c1a250 50%, white 50%);
+    background-size: 300% 100%;
+    background-position: right bottom;
+    transition: all .4s ease-in-out;
+    bottom: 40px;
+  }
+
+  .mob-Button a:hover {
+    background-position: left bottom;
+  }
+
+  .mob-Button {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .reserve-Mob {
+    width: 220px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: Merriweather;
+    color: white;
+    transition: all .5s ease-in-out;
+  }
+
+  .reserve-Mob:hover {
+    color: #c1a250;
+  }
+}
