@@ -1,13 +1,20 @@
 .big-Cont {
   width: 100%;
   height: 1300px;
-  overflow-y: scroll;
 }
 
 #name {
   font-family: Merriweather;
   font-weight: bold;
   letter-spacing: 3px;
+  color: #c1a250;
+}
+
+.right-Header a:hover {
+  color: #c1a250;
+}
+
+.reserve p:hover {
   color: #c1a250;
 }
 
@@ -303,6 +310,10 @@
 
 @media only screen and (max-width: 600px) {
 
+  body {
+    height: 2000px;
+  }
+
   .mobile-Icons {
     position: absolute;
     width: 100%;
@@ -310,15 +321,15 @@
     height: 50px;
     display: flex;
     flex-direction: row;
-    padding-left: 7%;
   }
 
   .mobile-Left {
     display: flex;
     align-items: center;
     flex-direction: row;
-    width: 100%;
+    width: 95%;
     height: 50px;
+    padding-left: 5%;
   }
 
   .mobile-Left a {
@@ -342,6 +353,10 @@
     font-family: Merriweather;
     letter-spacing: 4px;
     margin-right: 7%;
+  }
+
+  #name-Land {
+    margin-left: 10px;
   }
 
   .fab {
